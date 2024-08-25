@@ -10,7 +10,7 @@ function initialize() {
         return;
       }
       posts = JSON.parse(data);
-      fs.readFile("data/categpories.json", "utf8", (err, data) => {
+      fs.readFile("data/categories.json", "utf8", (err, data) => {
         if (err) {
           reject("unable to fetch data from categories.json");
           return;
